@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 A Special Question 💕</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container">
+        <div class="heart heart1">💖</div>
+        <div class="heart heart2">💕</div>
+        <div class="heart heart3">💝</div>
+        <div class="heart heart4">💖</div>
+        <div class="heart heart5">💕</div>
+        <div class="heart heart6">💝</div>
+    </div>
+
+    <!-- Stars Background -->
+    <div class="stars">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="screen active">
+            <h1 class="title">✨ Something Special Awaits ✨</h1>
+            <p class="subtitle">Click the button to begin your journey</p>
+            <button id="start-btn" class="magical-btn">Start the Magic 🌟</button>
+        </div>
+
+        <!-- Question 1 -->
+        <div id="question1" class="screen">
+            <h2 class="question">Do you believe in magic? ✨</h2>
+            <div class="button-group">
+                <button class="choice-btn" data-next="question2">Yes, absolutely! 🪄</button>
+                <button class="choice-btn" data-next="question2">I'm about to! 🌈</button>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div id="question2" class="screen">
+            <h2 class="question">What makes you smile the most? 😊</h2>
+            <div class="button-group">
+                <button class="choice-btn" data-next="question3">Unexpected surprises 🎁</button>
+                <button class="choice-btn" data-next="question3">Sweet moments 🍯</button>
+                <button class="choice-btn" data-next="question3">Being with special people 👫</button>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div id="question3" class="screen">
+            <h2 class="question">If someone wanted to tell you something important, how would you want them to do it? 💭</h2>
+            <div class="button-group">
+                <button class="choice-btn" data-next="building-suspense">In a creative way 🎨</button>
+                <button class="choice-btn" data-next="building-suspense">With their whole heart ❤️</button>
+                <button class="choice-btn" data-next="building-suspense">In an unforgettable moment ⭐</button>
+            </div>
+        </div>
+
+        <!-- Building Suspense -->
+        <div id="building-suspense" class="screen">
+            <h2 class="question">Perfect! Because I have something very special to tell you... 💕</h2>
+            <p class="subtitle">Are you ready?</p>
+            <button id="ready-btn" class="magical-btn">I'm ready! 💖</button>
+        </div>
+
+        <!-- Letter Reveal -->
+        <div id="letter-reveal" class="screen">
+            <div class="letter-container">
+                <h2 class="dear-you">Dear You, 💌</h2>
+                <div class="letter-content">
+                    <p class="letter-text">From the moment I met you, my world became brighter... ✨</p>
+                    <p class="letter-text">Your smile lights up every room you enter... 😊</p>
+                    <p class="letter-text">Your laugh is my favorite sound in the universe... 🎵</p>
+                    <p class="letter-text">And being around you feels like coming home... 🏠💕</p>
+                    <p class="letter-text">So I have one very important question to ask you...</p>
+                </div>
+                <button id="question-btn" class="magical-btn pulse">Ask me the question 💕</button>
+            </div>
+        </div>
+
+        <!-- The Big Question -->
+        <div id="big-question" class="screen">
+            <div class="proposal-container">
+                <h1 class="big-question-text">Will you be my girlfriend? 💕</h1>
+                <div class="proposal-buttons">
+                    <button id="yes-btn" class="proposal-btn yes-btn">YES! 💖</button>
+                    <button id="no-btn" class="proposal-btn no-btn">I need to think... 🤔</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Success Screen -->
+        <div id="success-screen" class="screen">
+            <div class="success-container">
+                <h1 class="success-title">🎉 YOU SAID YES! 🎉</h1>
+                <p class="success-message">You just made me the happiest person in the world! 💕</p>
+                <div class="celebration">
+                    <div class="firework">🎆</div>
+                    <div class="firework">🎇</div>
+                    <div class="firework">🎆</div>
+                </div>
+                <button id="celebrate-btn" class="magical-btn">Let's Celebrate! 🥳</button>
+            </div>
+        </div>
+
+        <!-- Think About It Screen -->
+        <div id="think-screen" class="screen">
+            <div class="think-container">
+                <h2 class="think-title">That's totally okay! 💙</h2>
+                <p class="think-message">Take all the time you need. I'll be here waiting with the same smile that you fell for! 😊</p>
+                <p class="think-submessage">Just know that you mean the world to me, no matter what! 🌍💕</p>
+                <div class="button-group">
+                    <button id="reconsider-btn" class="magical-btn">Actually... 💭</button>
+                    <button id="restart-btn" class="magical-btn">Start Over 🔄</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Music Toggle -->
+    <div class="music-control">
+        <button id="music-toggle">🎵</button>
+        <audio id="background-music" loop>
+            <source src="romantic-music.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
